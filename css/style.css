@@ -1,0 +1,564 @@
+
+:root {
+    --primary: #0F172A;
+    --secondary: #1E293B;
+    --accent: #38BDF8;
+    --accent-gradient: linear-gradient(135deg, #38BDF8, #818CF8);
+    --text: #E2E8F0;
+    --highlight: #22C55E;
+    --card-bg: rgba(30, 41, 59, 0.7);
+}
+
+/* Core Styles */
+body {
+    background: var(--primary);
+    color: var(--text);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+    background-image: 
+        radial-gradient(circle at 20% 20%, rgba(56, 189, 248, 0.15) 0%, transparent 25%),
+        radial-gradient(circle at 80% 80%, rgba(129, 140, 248, 0.15) 0%, transparent 25%);
+}
+
+/* Glowing effect for headings */
+.glow-text {
+    text-shadow: 0 0 10px rgba(56, 189, 248, 0.3);
+}
+
+/* Glass effect for cards */
+.glass-effect {
+    background: var(--card-bg);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Enhanced Navbar */
+.navbar {
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-link {
+    color: var(--text) !important;
+    padding: 0.7rem 1.5rem !important;
+    margin: 0 0.3rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-link:hover {
+    background: var(--accent-gradient);
+    color: white !important;
+    transform: translateY(-2px);
+}
+
+/* Hero Section */
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+    position: relative;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-title {
+    font-size: 4rem;
+    font-weight: bold;
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+}
+
+/* ---------------------About Section ---------------------------- */
+/* Timeline Styling */
+.timeline-item {
+    position: relative;
+    padding-left: 1rem;
+    border-left: 2px solid var(--accent);
+}
+
+.timeline-icon {
+    background: rgba(56, 189, 248, 0.1);
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.text-accent {
+    color: var(--accent);
+}
+
+/* Focus Areas & Achievements */
+.focus-item, .achievement-item {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.focus-item:hover, .achievement-item:hover {
+    transform: translateX(10px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Progress Bars Enhancement */
+.progress {
+    height: 8px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.progress-bar {
+    background: var(--accent-gradient);
+    border-radius: 4px;
+}
+
+/* Icons */
+.fas {
+    transition: all 0.3s ease;
+}
+
+.timeline-item:hover .fas,
+.focus-item:hover .fas,
+.achievement-item:hover .fas {
+    transform: scale(1.2);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .timeline-item {
+        padding-left: 0.5rem;
+    }
+    
+    .timeline-icon {
+        padding: 0.75rem;
+    }
+}
+/* ------------------------------------------------- */
+
+/* Animated Border Button */
+.btn-animated {
+    background: var(--accent-gradient);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+
+.btn-animated:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(56, 189, 248, 0.2);
+}
+
+/* Card Designs */
+.card {
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Skill Cards */
+.skill-card {
+    padding: 2rem;
+    border-radius: 16px;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.skill-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* Social Icons */
+.social-icons a {
+    color: var(--text);
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--accent);
+    transform: translateY(-3px);
+}
+
+/* Project Cards */
+.project-card {
+    border-radius: 16px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.project-content {
+    padding: 1.5rem;
+}
+
+.project-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, transparent 0%, rgba(15, 23, 42, 0.8) 100%);
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background: var(--secondary);
+        padding: 1rem;
+        border-radius: 16px;
+        margin-top: 1rem;
+    }
+
+    .nav-link {
+        text-align: center;
+        margin: 0.5rem 0;
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 4rem 0;
+    }
+
+    .tech-stack-item {
+        width: 100px;
+        height: 100px;
+        margin: 0.5rem;
+    }
+
+    .tech-stack-item i {
+        font-size: 2rem;
+    }
+}
+
+/* Animations */
+.floating {
+    animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Progress bars */
+.progress {
+    height: 8px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.progress-bar {
+    background: var(--accent-gradient);
+}
+
+
+.floating {
+    animation: floatAnimation 3s infinite ease-in-out;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+}
+@keyframes floatAnimation {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.profile-btn {
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-width: 180px;
+}
+
+/* Button Colors */
+.github { background: #24292e; color: #fff; }
+.leetcode { background: #f89f1b; color: #fff; }
+.gfg { background: #0f9d58; color: #fff; }
+.hackerrank { background: #1ba94c; color: #fff; }
+
+/* Hover Effects */
+.profile-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+/* Button-Specific Hover Colors */
+.github:hover { background: #333; }
+.leetcode:hover { background: #d98200; }
+.gfg:hover { background: #0b7d45; }
+.hackerrank:hover { background: #168a3d; }
+
+/*  ------------------------------------------------------------------------- */
+
+/* Tech Stack Section Styles */
+#tech-stack .row {
+    --items-per-row: 4;
+    --gap: 2rem;
+}
+
+#tech-stack .tech-stack-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 180px;  /* Increased from 120px */
+    height: 180px; /* Increased from 120px */
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    padding: 1.5rem;
+    position: relative;
+    overflow: hidden;
+    margin: 1rem;
+}
+
+#tech-stack .tech-stack-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+#tech-stack .tech-stack-item i {
+    font-size: 4rem;  /* Increased from 2.5rem */
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+#tech-stack .tech-stack-item span {
+    font-size: 1.1rem;  /* Increased from 0.9rem */
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Individual icon colors */
+#tech-stack .tech-stack-item i.fa-html5 { color: #E34F26; }
+#tech-stack .tech-stack-item i.fa-css3-alt { color: #1572B6; }
+#tech-stack .tech-stack-item i.fa-bootstrap { color: #7952B3; }
+#tech-stack .tech-stack-item i.fa-js { color: #F7DF1E; }
+#tech-stack .tech-stack-item i.fa-java { color: #007396; }
+#tech-stack .tech-stack-item i.fa-database { color: #4479A1; }
+#tech-stack .tech-stack-item i.fa-github { color: #181717; }
+
+/* Hover animations for icons */
+#tech-stack .tech-stack-item:hover i {
+    transform: scale(1.2) rotate(5deg);
+}
+
+/* Glow effects on hover */
+#tech-stack .tech-stack-item:hover i.fa-html5 { text-shadow: 0 0 20px rgba(227, 79, 38, 0.6); }
+#tech-stack .tech-stack-item:hover i.fa-css3-alt { text-shadow: 0 0 20px rgba(21, 114, 182, 0.6); }
+#tech-stack .tech-stack-item:hover i.fa-bootstrap { text-shadow: 0 0 20px rgba(121, 82, 179, 0.6); }
+#tech-stack .tech-stack-item:hover i.fa-js { text-shadow: 0 0 20px rgba(247, 223, 30, 0.6); }
+#tech-stack .tech-stack-item:hover i.fa-java { text-shadow: 0 0 20px rgba(0, 115, 150, 0.6); }
+#tech-stack .tech-stack-item:hover i.fa-database { text-shadow: 0 0 20px rgba(68, 121, 161, 0.6); }
+#tech-stack .tech-stack-item:hover i.fa-github { text-shadow: 0 0 20px rgba(24, 23, 23, 0.6); }
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    #tech-stack .tech-stack-item {
+        width: 160px;
+        height: 160px;
+    }
+    
+    #tech-stack .tech-stack-item i {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    #tech-stack .tech-stack-item {
+        width: 150px;
+        height: 150px;
+    }
+    
+    #tech-stack .tech-stack-item i {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #tech-stack .tech-stack-item {
+        width: 140px;
+        height: 140px;
+        margin: 0.75rem;
+    }
+    
+    #tech-stack .tech-stack-item i {
+        font-size: 2.8rem;
+    }
+    
+    #tech-stack .tech-stack-item span {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    #tech-stack .tech-stack-item {
+        width: 130px;
+        height: 130px;
+        margin: 0.5rem;
+    }
+    
+    #tech-stack .tech-stack-item i {
+        font-size: 2.5rem;
+    }
+    
+    #tech-stack .tech-stack-item span {
+        font-size: 0.9rem;
+    }
+}
+
+/* ---------------------------------------------------------------- */
+
+/* --------------------------Certificate Section ------------------------------ */
+/* ---------------------------------------------------------------- */
+/* Bio text */
+.hero-bio {
+    color: #E2E8F0 !important; /* Lighter color for better visibility */
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.highlight {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+/* Info Cards */
+.info-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.info-card {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1.25rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.info-card i {
+    color: var(--accent);
+    font-size: 1.2rem;
+}
+
+.info-card span {
+    color: #E2E8F0; /* Lighter color for better visibility */
+    font-size: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .info-cards {
+        gap: 0.5rem;
+    }
+    
+    .info-card {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .hero-bio {
+        font-size: 1.1rem;
+    }
+}
+
+.contact-info-card {
+    transition: all 0.3s ease;
+}
+
+.contact-info-card:hover {
+    transform: translateY(-5px);
+}
+
+.text-accent {
+    color: #4e54c8;
+}
+
+.quick-action-card {
+    padding: 1rem;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+.quick-action-card:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.mini-social a {
+    font-size: 1.2rem;
+    margin: 0 8px;
+}
+
+/* Form focus styles */
+.form-control:focus {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    border-color: #4e54c8 !important;
+    box-shadow: 0 0 0 0.25rem rgba(78, 84, 200, 0.25) !important;
+}
+

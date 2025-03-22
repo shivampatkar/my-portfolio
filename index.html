@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="JavaScript" href="js/script.js">
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">
+                            <i class="fas fa-home me-2"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">
+                            <i class="fas fa-user me-2"></i>About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">
+                            <i class="fas fa-code me-2"></i>Skills
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">
+                            <i class="fas fa-project-diagram me-2"></i>Projects
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tech-stack">
+                            <i class="fas fa-layer-group me-2"></i>Tech Stack
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#coding-profile">
+                            <i class="fas fa-link me-2"></i>Coding Profiles
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 col-sm mb-4 col-lg mb-0">
+                    <div class="hero-content" data-aos="fade-up">
+                        <h1 class="hero-title">Hi, I'm Shivam Patkar</h1>
+
+                        <!-- Typed Text -->
+                        <p class="lead mb-4">
+                            <span id="typed-text"></span>
+                        </p>
+
+                        <!-- Bio with Keywords -->
+                        <p class="lead hero-bio mb-4">
+                            A passionate <span class="highlight">Java Full Stack Developer</span> & Computer Science
+                            Student from Jabalpur,
+                            transforming ideas into reality through clean code and innovative solutions.
+                        </p>
+
+                        <!-- Info Cards -->
+                        <div class="info-cards d-flex flex-wrap gap-3 mb-4">
+                            <div class="info-card">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>B.Tech CSE</span>
+                            </div>
+                            <div class="info-card">
+                                <i class="fas fa-briefcase"></i>
+                                <span>Looking for Internship</span>
+                            </div>
+                            <div class="info-card">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Jabalpur, India</span>
+                            </div>
+                        </div>
+
+                        <!-- Main CTA Buttons -->
+                        <div class="d-flex flex-md-row flex-column gap-2">
+                            <a href="https://drive.google.com/file/d/1i0TgI2scYNeB7HbqbFS8jg7ShAGgaS6R/view?usp=sharing"
+                                class="btn btn-animated me-md-3">
+                                <i class="fas fa-download me-2"></i>Download CV
+                            </a>
+                            <a href="#contact" class="btn btn-animated">
+                                <i class="fas fa-envelope me-2"></i>Contact Me
+                            </a>
+                        </div>
+
+                        <!-- Social Icons -->
+                        <div class="social-icons mt-4">
+                            <a href="https://github.com/shivampatkar"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/shivam-patkar-26s01/"><i
+                                    class="fab fa-linkedin"></i></a>
+                            <a href="https://instagram.com/u/_shivam_patkar/"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 d-sm-block">
+                    <img src="images/profile-pic.png" alt="Profile" class="img-fluid rounded-circle floating">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 glow-text" data-aos="fade-up">About Me</h2>
+            <div class="row g-4">
+                <!-- About Me Column -->
+                <div class="col-md-6" data-aos="fade-right">
+                    <div class="glass-effect p-4 rounded-16 h-100">
+                        <h3 class="mb-4">My Journey</h3>
+                        <p class="mb-4"> My journey began with core Java, and over time, I expanded my skills to
+                            advanced Java, databases, and web development. Currently, I am refining my expertise by
+                            building real-world projects and enhancing my problem-solving skills in DSA.</p>
+
+                        <!-- Key Focus Areas -->
+                        <div class="focus-areas mb-4">
+                            <h5 class="mb-3">What I Focus On:</h5>
+                            <div class="focus-item mb-2">
+                                <i class="fas fa-check-circle text-accent me-2"></i>
+                                <span>Building responsive and user-friendly web applications</span>
+                            </div>
+                            <div class="focus-item mb-2">
+                                <i class="fas fa-check-circle text-accent me-2"></i>
+                                <span>Writing clean, efficient, and maintainable code</span>
+                            </div>
+                            <div class="focus-item mb-2">
+                                <i class="fas fa-check-circle text-accent me-2"></i>
+                                <span>Learning new technologies and best practices</span>
+                            </div>
+                        </div>
+
+                        <!-- Skills Progress -->
+                        <h5 class="mb-3">Core Skills:</h5>
+                        <div class="skills-progress">
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span>Java & Backend Development</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span>Frontend Development</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span>Database Management</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education & Achievements Column -->
+                <div class="col-md-6" data-aos="fade-left">
+                    <div class="glass-effect p-4 rounded-16 h-100">
+                        <h3 class="mb-4">Education & Achievements</h3>
+
+                        <!-- Education Timeline -->
+                        <div class="education-timeline mb-4">
+                            <div class="timeline-item mb-4">
+                                <div class="d-flex">
+                                    <div class="timeline-icon me-3">
+                                        <i class="fas fa-graduation-cap fa-2x text-accent"></i>
+                                    </div>
+                                    <div>
+                                        <h5>B.Tech in Computer Science</h5>
+                                        <p class="mb-1">Shri Ram Institute Of Technology, Jabalpur</p>
+                                        <p class="mb-1"><i class="fas fa-calendar-alt me-2"></i>2022 - Present</p>
+                                        <p class="mb-0"><i class="fas fa-star me-2"></i>CGPA: 7.41</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="d-flex">
+                                    <div class="timeline-icon me-3">
+                                        <i class="fas fa-school fa-2x text-accent"></i>
+                                    </div>
+                                    <div>
+                                        <h5>Higher Secondary Education</h5>
+                                        <p class="mb-1">12th Grade</p>
+                                        <p class="mb-1"><i class="fas fa-calendar-alt me-2"></i>Completed in 2022</p>
+                                        <p class="mb-0"><i class="fas fa-star me-2"></i>Percentage: 80%+</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Key Achievements -->
+                        <div class="achievements">
+                            <h5 class="mb-3">Key Achievements</h5>
+                            <div class="achievement-item mb-2">
+                                <i class="fas fa-trophy text-accent me-2"></i>
+                                <span>Solved 100+ DSA problems on various platforms</span>
+                            </div>
+                            <div class="achievement-item mb-2">
+                                <i class="fas fa-trophy text-accent me-2"></i>
+                                <span>Completed multiple full-stack projects</span>
+                            </div>
+                            <div class="achievement-item mb-2">
+                                <i class="fas fa-trophy text-accent me-2"></i>
+                                <span>Active contributor to open-source projects</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 glow-text" data-aos="fade-up">Skills</h2>
+            <div class="row g-4">
+                <div class="col-md-3" data-aos="flip-right">
+                    <div class="skill-card glass-effect">
+                        <i class="fas fa-paint-brush skill-icon"></i>
+                        <h4>UI/UX Design</h4>
+                        <p>Creating intuitive and beautiful user experiences with modern design tools.</p>
+                        <div class="mt-3">
+                            <span class="badge bg-primary me-2">Figma</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="flip-right">
+                    <div class="skill-card glass-effect">
+                        <i class="fas fa-laptop-code skill-icon"></i>
+                        <h4>Frontend Development</h4>
+                        <p>Crafting responsive and interactive user interfaces using modern frameworks and tools.</p>
+                        <div class="mt-3">
+                            <span class="badge bg-primary me-2">HTML</span>
+                            <span class="badge bg-primary me-2">CSS</span>
+                            <span class="badge bg-primary me-2">JavaScript</span>
+                            <span class="badge bg-primary">Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="flip-left">
+                    <div class="skill-card glass-effect">
+                        <i class="fas fa-server skill-icon"></i>
+                        <h4>Backend Development</h4>
+                        <p>Building robust and scalable server-side applications and APIs.</p>
+                        <div class="mt-3">
+                            <span class="badge bg-primary me-2">Java</span>
+                            <span class="badge bg-primary me-2">Servlets</span>
+                            <span class="badge bg-primary">MVC Architecture</span>
+                            <span class="badge bg-primary me-2">JSP</span>
+                            <span class="badge bg-primary">File Handling</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="flip-left">
+                    <div class="skill-card glass-effect">
+                        <i class="fas fa-database skill-icon"></i>
+                        <h4>Database Management</h4>
+                        <p>Managing and optimizing databases for efficient data storage and retrieval.</p>
+                        <div class="mt-3">
+                            <span class="badge bg-primary me-2">MySQL</span>
+                            <span class="badge bg-primary me-2">JDBC</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 glow-text" data-aos="fade-up">Featured Projects</h2>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="zoom-in">
+                    <div class="project-card glass-effect">
+                        <div class="project-img">
+                            <img src="images/student_grade_app.png" alt="Student Grade Calculator" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <h4><i class="fas fa-calculator me-2"></i>Student Grade Calculator</h4>
+                            <p>A simple Java console application to manage student grades, calculate averages, and
+                                compute statistics.</p>
+                            <div class="mt-3">
+                                <span class="badge bg-primary me-2">Java</span>
+                                <span class="badge bg-primary me-2">Collections</span>
+                                <span class="badge bg-primary">OOP</span>
+                            </div>
+                            <div class="mt-3">
+                                <a href="#" class="btn btn-animated btn-sm">
+                                    <i class="fas fa-globe me-2"></i>Live Demo
+                                </a>
+                                <a href="https://github.com/shivampatkar/Student_Grade_Tracker"
+                                    class="btn btn-outline-light btn-sm ms-2">
+                                    <i class="fab fa-github me-2"></i>Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-aos="zoom-in">
+                    <div class="project-card glass-effect">
+                        <div class="project-img">
+                            <img src="images/hotel reservation.png" alt="Hotel Reservation System" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <h4><i class="fas fa-hotel me-2"></i>Hotel Reservation System</h4>
+                            <p>A simple hotel reservation system allowing users to book rooms, manage reservations, and
+                                process payments.</p>
+                            <div class="mt-3">
+                                <span class="badge bg-primary me-2">Java</span>
+                                <span class="badge bg-primary me-2">OOP</span>
+                                <span class="badge bg-primary">Java Time API</span>
+                            </div>
+                            <div class="mt-3">
+                                <a href="#" class="btn btn-animated btn-sm">
+                                    <i class="fas fa-globe me-2"></i>Live Demo
+                                </a>
+                                <a href="https://github.com/shivampatkar/Hotel_Reservation_System"
+                                    class="btn btn-outline-light btn-sm ms-2">
+                                    <i class="fab fa-github me-2"></i>Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in">
+                    <div class="project-card glass-effect">
+                        <div class="project-img">
+                            <img src="images/tdf.jpeg" alt="Technical Discussion Forum" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <h4><i class="fas fa-comments me-2"></i>Technical Discussion Forum</h4>
+                            <p>A Java full-stack project built with J2EE, allowing developers to discuss technical
+                                topics, ask questions, and share knowledge.</p>
+                            <div class="mt-3">
+                                <span class="badge bg-primary me-2">Java</span>
+                                <span class="badge bg-primary me-2">J2EE</span>
+                                <span class="badge bg-primary me-2">JSP & Servlets</span>
+                                <span class="badge bg-primary me-2">JSTL</span>
+                                <span class="badge bg-primary me-2">Listeners</span>
+                                <span class="badge bg-primary me-2">MySQL</span>
+                                <span class="badge bg-primary me-2">HTML</span>
+                                <span class="badge bg-primary me-2">CSS</span>
+                                <span class="badge bg-primary me-2">JavaScript</span>
+                                <span class="badge bg-primary">Bootstrap</span>
+                            </div>
+                            <div class="mt-3">
+                                <a href="#" class="btn btn-animated btn-sm">
+                                    <i class="fas fa-globe me-2"></i>Live Demo
+                                </a>
+                                <a href="https://github.com/shivampatkar/Technical_Discussion_Forum"
+                                    class="btn btn-outline-light btn-sm ms-2">
+                                    <i class="fab fa-github me-2"></i>Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="tech-stack" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 glow-text" data-aos="fade-up">Tech Stack</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="d-flex flex-wrap justify-content-center">
+                        <div class="tech-stack-item" data-aos="zoom-in">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="tech-stack-item" data-aos="zoom-in">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="tech-stack-item" data-aos="zoom-in">
+                            <i class="fab fa-bootstrap"></i>
+                            <span>Bootstrap</span>
+                        </div>
+                        <div class="tech-stack-item" data-aos="zoom-in">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="tech-stack-item" data-aos="zoom-in">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="tech-stack-item" data-aos="zoom-in">
+                            <i class="fas fa-database"></i>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="tech-stack-item" data-aos="zoom-in">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Coding Profiles Section -->
+    <section id="coding-profile" class="py-5 text-center">
+        <div class="container">
+            <h2 class="glow-text" data-aos="fade-up">My Coding Profiles</h2>
+            <p class="mb-4">Check out my coding profiles on different platforms:</p>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+
+                <!-- GitHub -->
+                <a href="https://github.com/shivampatkar" target="_blank" class="btn profile-btn github">
+                    <i class="fab fa-github me-2"></i> GitHub
+                </a>
+
+                <!-- LeetCode -->
+                <a href="https://leetcode.com/shivam_2601" target="_blank" class="btn profile-btn leetcode">
+                    <i class="fas fa-code me-2"></i> LeetCode
+                </a>
+
+                <!-- GeeksforGeeks -->
+                <a href="https://www.geeksforgeeks.org/user/shivampattkdb/" target="_blank" class="btn profile-btn gfg">
+                    <i class="fas fa-laptop-code me-2"></i> GeeksforGeeks
+                </a>
+
+                <!-- HackerRank -->
+                <a href="https://www.hackerrank.com/shivampatkar2601" target="_blank"
+                    class="btn profile-btn hackerrank">
+                    <i class="fab fa-hackerrank me-2"></i> HackerRank
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 glow-text" data-aos="fade-up">Get In Touch</h2>
+            <div class="row justify-content-center">
+                <!-- Contact Info Cards -->
+                <div class="col-md-10 mb-5">
+                    <div class="row g-4">
+                        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="contact-info-card glass-effect p-4 text-center h-100">
+                                <i class="fas fa-envelope fa-2x mb-3 text-accent"></i>
+                                <h5>Email</h5>
+                                <p class="mb-0"><a href="mailto:shivampatkar2601@gmail.com"
+                                        class="text-white text-decoration-none">shivampatkar2601@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                            <div class="contact-info-card glass-effect p-4 text-center h-100">
+                                <i class="fas fa-phone-alt fa-2x mb-3 text-accent"></i>
+                                <h5>Call Me</h5>
+                                <p class="mb-0">Available on request</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                            <div class="contact-info-card glass-effect p-4 text-center h-100">
+                                <i class="fas fa-map-marker-alt fa-2x mb-3 text-accent"></i>
+                                <h5>Location</h5>
+                                <p class="mb-0">Jabalpur, Madhya Pradesh, India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-8">
+                    <div class="row g-4">
+                        <!-- Form Column -->
+                        <div class="col-md-7">
+                            <div class="glass-effect p-4 rounded-16 h-100" data-aos="fade-up">
+                                <h4 class="mb-4"><i class="fas fa-paper-plane me-2"></i>Send a Message</h4>
+                                <form id="contact-form">
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">Full Name</label>
+                                        <input type="text" name="name" id="name"
+                                            class="form-control bg-transparent text-white" placeholder="Your Full Name"
+                                            required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" name="email" id="email"
+                                            class="form-control bg-transparent text-white" placeholder="Your Email"
+                                            required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="subject" class="form-label">Subject</label>
+                                        <input type="text" name="subject" id="subject"
+                                            class="form-control bg-transparent text-white" placeholder="Your Subject"
+                                            required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message" class="form-label">Message</label>
+                                        <textarea name="message" id="message"
+                                            class="form-control bg-transparent text-white" rows="5"
+                                            placeholder="Your Message" required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-animated w-100">
+                                        <i class="fas fa-paper-plane me-2"></i>Send Message
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <!-- Quick Actions Column -->
+                        <div class="col-md-5">
+                            <div class="glass-effect p-4 rounded-16 h-100" data-aos="fade-up" data-aos-delay="100">
+                                <h4 class="mb-4"><i class="fas fa-bolt me-2"></i>Quick Actions</h4>
+
+                                <!-- Download Resume -->
+                                <div class="quick-action-card mb-4">
+                                    <h5><i class="fas fa-file-alt me-2"></i>Get My Resume</h5>
+                                    <p class="small mb-3">Download my latest resume to learn more about my skills and
+                                        experience.</p>
+                                    <a href="https://drive.google.com/file/d/1i0TgI2scYNeB7HbqbFS8jg7ShAGgaS6R/view?usp=sharing"
+                                        class="btn btn-outline-light btn-sm w-100">
+                                        <i class="fas fa-download me-2"></i>Download CV
+                                    </a>
+                                </div>
+
+                                <!-- View Projects -->
+                                <div class="quick-action-card mb-4">
+                                    <h5><i class="fas fa-code-branch me-2"></i>View My Work</h5>
+                                    <p class="small mb-3">Check out my latest projects and code repositories.</p>
+                                    <a href="https://github.com/shivampatkar" target="_blank"
+                                        class="btn btn-outline-light btn-sm w-100">
+                                        <i class="fab fa-github me-2"></i>GitHub Projects
+                                    </a>
+                                </div>
+
+                                <!-- Coding Profiles -->
+                                <div class="quick-action-card">
+                                    <h5><i class="fas fa-laptop-code me-2"></i>Coding Profiles</h5>
+                                    <p class="small mb-3">View my solutions and progress on coding platforms.</p>
+                                    <div class="d-flex flex-wrap gap-2 mt-2">
+                                        <a href="https://leetcode.com/shivam_2601" target="_blank"
+                                            class="btn btn-outline-light btn-sm flex-grow-1">
+                                            <i class="fas fa-code me-1"></i>LeetCode
+                                        </a>
+                                        <a href="https://www.geeksforgeeks.org/user/shivampattkdb/" target="_blank"
+                                            class="btn btn-outline-light btn-sm flex-grow-1">
+                                            <i class="fas fa-laptop-code me-1"></i>GFG
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h4>Shivam Patkar</h4>
+                    <p class="mb-0">Java Full Stack Developer</p>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0 text-md-center">
+                    <div class="social-icons">
+                        <a href="https://github.com/shivampatkar" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/shivam-patkar-26s01/" title="LinkedIn"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://instagram.com/u/_shivam_patkar/" title="Instagram"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <p class="mb-1">© 2025 Shivam Patkar. All rights reserved.</p>
+                    <p class="mb-0 small">Crafted with <i class="fas fa-heart text-danger"></i> in Jabalpur, India</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- email js -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script src="js/script.js"></script>
+
+    <script type="text/javascript">
+        (function () {
+            // Replace "YOUR_USER_ID" with your actual EmailJS user ID from your dashboard
+            emailjs.init("5siN6RxbMwxq1zR5n");
+        })();
+    </script>
+
+</body>
+
+</html>
